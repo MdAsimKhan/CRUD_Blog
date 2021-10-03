@@ -1,0 +1,9 @@
+<h1>Add Blog</h1>
+<a href="/">HOME</a>
+
+<body>
+    <form method="POST">
+        {% csrf_token %} {{form.as_p}}
+        <input type="submit" value="Confirm">
+    </form>
+</body>

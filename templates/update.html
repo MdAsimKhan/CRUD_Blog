@@ -1,0 +1,9 @@
+<h1>Update Blog</h1>
+<a href="/">HOME</a>
+
+<body>
+    <form method="POST">
+        {% csrf_token %} {{blogs.as_p}}
+        <input type="submit" value="Confirm">
+    </form>
+</body>
